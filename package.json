@@ -2,18 +2,28 @@
   "name": "next-assist",
   "version": "0.0.0",
   "description": "Supercharge your Next.js project setup with next-assist! This powerful utility package streamlines the initialization of a Next.js application, integrating essential tools and libraries for a robust, modern web development experience.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SaifNasir196/next-assist.git"
   },
+  "keywords": [
+    "next"
+  ],
   "author": "Saif Nasir",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SaifNasir196/next-assist/issues"
   },
-  "homepage": "https://github.com/SaifNasir196/next-assist#readme"
+  "homepage": "https://github.com/SaifNasir196/next-assist#readme",
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
 }
